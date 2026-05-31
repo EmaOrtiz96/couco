@@ -7,7 +7,7 @@ import os
 app = FastAPI(title="Couco Aromas API v3", version="3.0.0")
 
 app.add_middleware(CORSMiddleware,
-    allow_origins=["http://localhost:5173","http://localhost:3000"],
+    allow_origins=["https://couco.vercel.app","http://localhost:5173","http://localhost:3000"],
     allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 os.makedirs("uploads", exist_ok=True)
