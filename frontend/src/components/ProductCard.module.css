@@ -1,0 +1,24 @@
+.card{background:white;border:1px solid var(--border);transition:all .35s;cursor:pointer;position:relative;overflow:hidden;}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(26,23,20,.1);}
+.badge{position:absolute;top:1rem;left:1rem;z-index:2;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;padding:.25rem .7rem;background:var(--copper);color:white;}
+.oferta{background:var(--deep);}
+.imgWrap{height:220px;background:linear-gradient(135deg,var(--sand-light),var(--cream));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.prodImg{width:100%;height:100%;object-fit:cover;}
+.emoji{font-size:4rem;transition:transform .4s;}
+.card:hover .emoji{transform:scale(1.15) rotate(5deg);}
+.overlay{position:absolute;inset:0;background:rgba(26,23,20,.6);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;}
+.card:hover .overlay{opacity:1;}
+.favBtn{position:absolute;top:.7rem;right:.7rem;background:rgba(255,255,255,.85);border:none;width:30px;height:30px;border-radius:50%;font-size:1rem;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:all .2s;}
+.favBtn:hover,.favActive{color:var(--copper);background:white;}
+.info{padding:1.4rem;}
+.cat{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:.3rem;}
+.name{font-family:var(--font-d);font-size:1.25rem;font-weight:400;color:var(--deep);margin-bottom:.25rem;}
+.rating{display:flex;align-items:center;gap:.3rem;margin-bottom:.3rem;}
+.stars{font-size:.75rem;}
+.ratingN{font-size:.65rem;color:var(--muted);}
+.desc{font-size:.78rem;color:var(--muted);line-height:1.6;margin-bottom:1.1rem;}
+.footer{display:flex;justify-content:space-between;align-items:center;}
+.price{font-family:var(--font-d);font-size:1.3rem;color:var(--deep);}
+.old{font-size:.85rem;color:var(--muted);text-decoration:line-through;margin-right:.4rem;}
+.addBtn{background:none;border:1px solid var(--border);width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--deep);transition:all .3s;}
+.addBtn:hover{background:var(--deep);color:var(--cream);border-color:var(--deep);}

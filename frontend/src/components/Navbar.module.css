@@ -1,0 +1,38 @@
+.nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:1.5rem 4rem; transition:all .4s; }
+.scrolled { background:rgba(250,248,244,.95); backdrop-filter:blur(20px); border-bottom:1px solid var(--border); padding:1rem 4rem; }
+.logo { display:flex; align-items:center; gap:.8rem; }
+.logo img { width:44px; height:44px; border-radius:50%; object-fit:cover; }
+.logoFallback { width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--sand),var(--copper)); align-items:center; justify-content:center; font-family:var(--font-d); font-size:1.2rem; color:white; }
+.logoText { display:flex; flex-direction:column; }
+.logoName { font-family:var(--font-d); font-size:1.3rem; font-weight:600; letter-spacing:.1em; }
+.logoSub { font-size:.6rem; letter-spacing:.25em; text-transform:uppercase; color:var(--muted); }
+.links { display:flex; gap:2.5rem; list-style:none; }
+.links a { font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--charcoal); transition:color .3s; }
+.links a:hover { color:var(--copper); }
+.actions { display:flex; gap:.6rem; align-items:center; }
+.iconBtn { background:none; border:none; font-size:1.1rem; color:var(--charcoal); padding:.3rem; transition:color .3s; }
+.iconBtn:hover { color:var(--copper); }
+.searchWrap { position:relative; }
+.searchBox { position:absolute; right:0; top:calc(100% + .5rem); display:flex; background:white; border:1px solid var(--border); overflow:hidden; min-width:240px; box-shadow:0 8px 24px rgba(0,0,0,.08); }
+.searchBox input { flex:1; padding:.55rem .9rem; border:none; font-family:var(--font-b); font-size:.82rem; outline:none; }
+.searchBox button { padding:.55rem .8rem; background:var(--deep); color:var(--cream); border:none; font-size:.9rem; }
+.cartBtn { background:none; border:1px solid var(--border); padding:.45rem .8rem; display:flex; align-items:center; gap:.4rem; color:var(--deep); transition:all .3s; position:relative; }
+.cartBtn:hover { background:var(--deep); color:var(--cream); }
+.badge { background:var(--copper); color:white; width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.62rem; }
+.loginBtn { font-size:.68rem; letter-spacing:.18em; text-transform:uppercase; padding:.42rem .9rem; border:1px solid var(--border); color:var(--deep); transition:all .3s; }
+.loginBtn:hover { background:var(--deep); color:var(--cream); }
+.userMenu { position:relative; }
+.userBtn { display:flex; align-items:center; gap:.4rem; background:none; border:1px solid var(--border); padding:.32rem .65rem; color:var(--deep); transition:all .3s; }
+.userBtn:hover { border-color:var(--sand); }
+.avatar { width:24px; height:24px; border-radius:50%; object-fit:cover; }
+.initial { width:24px; height:24px; border-radius:50%; background:linear-gradient(135deg,var(--sand),var(--copper)); display:flex; align-items:center; justify-content:center; font-size:.75rem; color:white; }
+.uname { font-size:.72rem; letter-spacing:.06em; }
+.dropdown { position:absolute; right:0; top:calc(100% + .4rem); background:white; border:1px solid var(--border); min-width:200px; z-index:200; box-shadow:0 8px 30px rgba(0,0,0,.1); }
+.dropHead { padding:.9rem 1rem; border-bottom:1px solid var(--border); }
+.dropName { font-family:var(--font-d); font-size:1rem; color:var(--deep); }
+.dropEmail { font-size:.7rem; color:var(--muted); margin-top:.1rem; }
+.adminTag { display:inline-block; margin-top:.3rem; font-size:.55rem; letter-spacing:.15em; text-transform:uppercase; background:var(--copper); color:white; padding:.15rem .5rem; }
+.dropItem { display:block; width:100%; text-align:left; padding:.65rem 1rem; background:none; border:none; font-family:var(--font-b); font-size:.76rem; color:var(--charcoal); transition:background .2s; border-bottom:1px solid rgba(196,173,138,.08); }
+.dropItem:last-child { border-bottom:none; }
+.dropItem:hover { background:var(--cream); color:var(--copper); }
+@media(max-width:900px) { .nav,.scrolled{padding:1rem 1.5rem;} .links{display:none;} }
